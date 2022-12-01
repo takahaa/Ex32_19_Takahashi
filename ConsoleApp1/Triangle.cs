@@ -22,7 +22,8 @@ namespace AbstractSample
         public override float GetSurface()
         {
             //ヘロンの公式
-            return (side1 + side2 + side3) / 2;
+            float s = (side1 + side2 + side3) / 2;
+            return MathF.Sqrt((s-side1)*(s-side2)*(s-side3)*s);
         }
         public override float GetCircumference()
         {
@@ -31,7 +32,7 @@ namespace AbstractSample
         public override void GetBounds(out float width, out float height)
         {
             width = this.side1;
-            height = this.side2;
+            height = (2.0f * GetSurface()) / this.side1;
         }
 
     }

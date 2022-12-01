@@ -20,7 +20,7 @@ namespace Ex32
                 Console.WriteLine($"surfacesの面積は{surfaces[i].GetSurface()}");
                 Console.WriteLine($"surfacesの周囲長は{surfaces[i].GetCircumference()}");
                 surfaces[i].GetBounds(out width, out height);
-                Console.WriteLine($"入る箱の大きさは横{width},縦{height}");
+                Console.WriteLine($"入る箱の大きさは横{width},縦{height}\n");
             }
         }
     }
