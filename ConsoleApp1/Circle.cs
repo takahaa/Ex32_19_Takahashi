@@ -23,6 +23,12 @@ namespace AbstractSample
         {
             return radius * 2 * (float)Math.PI;
         }
+        public override void GetBounds(out float width, out float height)
+        {
+            width = this.radius * 2;
+            height = this.radius * 2;
+        }
+
 
     }
 }

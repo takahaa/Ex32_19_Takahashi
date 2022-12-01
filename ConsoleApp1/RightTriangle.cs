@@ -25,5 +25,11 @@ namespace AbstractSample
         {
             return width + height + MathF.Sqrt(width * width + height * height);
         }
+        public override void GetBounds(out float width, out float height)
+        {
+            width = this.width;
+            height = this.height;
+        }
+
     }
 }

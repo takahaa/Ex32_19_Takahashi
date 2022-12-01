@@ -28,6 +28,11 @@ namespace AbstractSample
         {
             return side1 + side2 + side3;
         }
+        public override void GetBounds(out float width, out float height)
+        {
+            width = this.side1;
+            height = this.side2;
+        }
 
     }
 }
