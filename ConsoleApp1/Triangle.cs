@@ -31,8 +31,8 @@ namespace AbstractSample
         }
         public override void GetBounds(out float width, out float height)
         {
-            width = this.side1;
-            height = (2.0f * GetSurface()) / this.side1;
+            width = MathF.Max(MathF.Max(side1,side2),side3);
+            height = (2.0f * GetSurface()) / width;
         }
 
     }
